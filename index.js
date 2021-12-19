@@ -10,20 +10,20 @@ function IMC(){
     if (nome!=='' && peso!=='' && altura!==''){
         const valor = (peso / (altura*altura)).toFixed(1);
         let classificacao= '';
-
-        if(valor<18.5){
+        console.log(valor);
+        if(valor < 18.5){
             classificacao = 'abaixo do peso';
         }
-        else if(valor <25){
+        else if(valor < 25){
             classificacao = 'com peso ideal';
         }
-        else if(valor <30){
+        else if(valor < 30){
             classificacao = 'levemente acima do peso';
         }
-        else if(valor <35){
+        else if(valor < 35){
             classificacao = 'com obesidade grau I';
         }
-        else if(valor <40){
+        else if(valor < 40){
             classificacao = 'com obesidade grau II';
         }
         else{
